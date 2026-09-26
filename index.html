@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikUNESPAR - Turmas de Engenharia de Produção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu Lateral (Sidebar) -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html">
+                <img src="https://paranagua.unespar.edu.br/graduacao/resolveuid/78b0383aa52f4f91877ca857e17a8cc5" alt="Logo Engenharia de Produção UNESPAR">
+            </a>
+        </div>
+
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="https://paranagua.unespar.edu.br" target="_blank">UNESPAR Paranaguá</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-container">
+        <h1>Turmas de Engenharia de Produção - UNESPAR</h1>
+
+        <p>Bem-vindo à base de conhecimento histórica dos alunos e ex-alunos de Engenharia de Produção do Campus de Paranaguá.</p>
+
+        <!-- Índice da Página -->
+        <div class="toc">
+            <div class="toc-title">Índice</div>
+            <ul>
+                <li><a href="#decada-2020">1 Década de 2020</a></li>
+            </ul>
+        </div>
+
+        <!-- Secção da Década de 2020 -->
+        <h2 id="decada-2020">Década de 2020</h2>
+        <ul id="lista-2020">
+            <!-- As turmas serão inseridas aqui automaticamente via JSON -->
+        </ul>
+    </div>
+
+    <!-- Script Principal -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', carregarIndex);
+    </script>
+</body>
+</html>

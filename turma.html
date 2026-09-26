@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turma - Engenharia de Produção UNESPAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu Lateral (Sidebar) -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <a href="index.html">
+                <img src="https://paranagua.unespar.edu.br/graduacao/resolveuid/78b0383aa52f4f91877ca857e17a8cc5" alt="Logo Engenharia de Produção UNESPAR">
+            </a>
+        </div>
+        <h2>Navegação</h2>
+        <ul>
+            <li><a href="index.html">← Voltar à Página Principal</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="main-container">
+        <h1 id="turma-titulo">Carregando...</h1>
+
+        <div class="header-image-container">
+            <img id="turma-foto" class="class-photo" src="" alt="Foto da Turma" style="display: none;">
+        </div>
+
+        <p>Estudantes que se formaram neste ano letivo:</p>
+
+        <!-- Container de cartões expansíveis dos alunos -->
+        <div id="lista-alunos">
+            <p>A carregar alunos...</p>
+        </div>
+    </div>
+
+    <!-- Script Principal -->
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', carregarTurma);
+    </script>
+</body>
+</html>

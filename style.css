@@ -1,0 +1,238 @@
+/* ==========================================
+   1. CONFIGURAÇÕES GERAIS E RESETS
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
+    background-color: #f6f6f6;
+    color: #202122;
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   2. MENU LATERAL (SIDEBAR)
+   ========================================== */
+.sidebar {
+    width: 210px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f6f6f6;
+    padding: 20px 15px;
+    border-right: none;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.sidebar-logo {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.sidebar-logo img {
+    max-width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.sidebar h2 {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: #54595d;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    color: #0645ad;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   3. ÁREA DE CONTEÚDO PRINCIPAL
+   ========================================== */
+.main-container {
+    margin-left: 230px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    flex: 1;
+    max-width: 1050px;
+    background-color: #ffffff;
+    border: 1px solid #a2a9b1;
+    padding: 30px 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* ==========================================
+   4. TIPOGRAFIA E TÍTULOS ESTILO WIKI
+   ========================================== */
+h1 {
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    font-size: 1.85em;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 3px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+    font-size: 0.95em;
+}
+
+/* ==========================================
+   5. ÍNDICE (TOC - TABLE OF CONTENTS)
+   ========================================== */
+.toc {
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 15px 0 25px 0;
+    min-width: 180px;
+}
+
+.toc-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.toc ul {
+    margin-left: 0;
+    list-style: none;
+}
+
+.toc li {
+    font-size: 0.88em;
+    margin-bottom: 4px;
+}
+
+/* ==========================================
+   6. CARTÕES EXPANSÍVEIS DE ALUNOS (ACCORDION)
+   ========================================== */
+#lista-alunos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.aluno-card {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.aluno-header {
+    padding: 12px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+.aluno-header:hover {
+    background-color: #eaecf0;
+}
+
+.aluno-corpo {
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #eaecf0;
+}
+
+.aluno-email {
+    margin: 0 0 10px 0;
+    color: #202122;
+}
+
+.aluno-links {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-social {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.85em;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.btn-social.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.btn-social.lattes {
+    background-color: #1b355a;
+    color: white;
+}
+
+.btn-social:hover {
+    opacity: 0.9;
+    text-decoration: none;
+}
