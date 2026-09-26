@@ -236,3 +236,35 @@ li {
     opacity: 0.9;
     text-decoration: none;
 }
+
+/* ==========================================
+   7. ADAPTAÇÃO INTELIGENTE PARA CELULAR (MOBILE)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    /* No celular, o corpo deixa de lado o flex fixo lateral para empilhar o conteúdo */
+    body {
+        display: block;
+        padding: 0;
+    }
+
+    /* O menu lateral sai da posição fixa na lateral e vai para o topo de forma limpa */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #a2a9b1;
+        padding: 15px;
+    }
+
+    /* A área principal remove a margem esquerda gigante do PC e ocupa a tela toda */
+    .main-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-left: 1px solid #a2a9b1;
+        border-right: 1px solid #a2a9b1;
+    }
+}
